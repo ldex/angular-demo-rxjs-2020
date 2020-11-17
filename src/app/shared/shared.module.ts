@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { ContactComponent } from './contact.component';
 import { ErrorComponent } from './error.component';
 import { AdminComponent } from './admin.component';
+import { LoadingComponent } from './loading/loading.component';
 
 
 @NgModule({
@@ -11,8 +12,10 @@ import { AdminComponent } from './admin.component';
     HomeComponent,
     ContactComponent,
     ErrorComponent,
-    AdminComponent
+    AdminComponent,
+    LoadingComponent
   ],
+  exports: [LoadingComponent],
   imports: [
     CommonModule
   ]
